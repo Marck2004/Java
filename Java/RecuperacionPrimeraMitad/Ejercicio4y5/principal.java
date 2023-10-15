@@ -22,14 +22,9 @@ Alumno.setNombre("Marcos");
 Alumno.setPrimerTrim(Alumno.notatrim(nota1));
 Alumno.setSegundoTrim(Alumno.notatrim(nota2));
 Alumno.setTercerTrim(Alumno.notatrim(nota3));
-
-Alumno.notasEjtrabajo();
-        Alumno.notaFinal();
         
             Alumno a1 = new Alumno("Marcos",Alumno.notatrim(nota1),Alumno.notatrim(nota2),Alumno.notatrim(nota3));
             
-            
-       // Alumno.notasEjtrabajo();
         Alumno.toString();
     }
 }

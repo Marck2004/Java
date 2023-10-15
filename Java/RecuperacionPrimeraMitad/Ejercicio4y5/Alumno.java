@@ -54,30 +54,26 @@ public class Alumno {
         Scanner teclado = new Scanner(System.in);
         int numeros = 0;
             String salir = "";
+            int suma = 0;
             int contador = 0;
-            
-              do{  
-            
+                   while(!salir.equalsIgnoreCase("no")){  
         for (int i = 0; i < notasEj.length; i++) {
             notasEj[i] = 0;
-                
+                System.out.println(notasEj[i]);
         }
             System.out.println("Introduzca numeros");
 
             numeros = teclado.nextInt();
-            
+            teclado.nextLine();
             notasEj[contador] = numeros;
-            
+            suma += numeros;
             
         contador++;
         System.out.println("Desea seguir metiendo numeros?");
             salir = teclado.nextLine();
-        teclado.nextLine();
-            
-              }while(!salir.equalsIgnoreCase("no"));
-              
-            double notamediaejercicios = numeros / 10;
-            
+    }
+
+            double notamediaejercicios = suma / notasEj.length;
             return notamediaejercicios;
     }
 
@@ -89,7 +85,7 @@ public class Alumno {
     @Override
     public String toString() {
         System.out.println("Alumno: " + "Nombre= " + Nombre + ", primerTrim= " + notatrim(primerTrim) + ", segundoTrim= " + notatrim(segundoTrim) + ", tercerTrim= " + notatrim(tercerTrim) + " notaFinal "+notaFinal());
-        return "Alumno: " + "Nombre= " + Nombre + ", primerTrim= " + primerTrim + ", segundoTrim= " + segundoTrim + ", tercerTrim= " + tercerTrim + ", notasEj= " + notasEj + " notaFinal "+notaFinal();
+        return "Alumno: " + "Nombre= " + Nombre + ", primerTrim= " + primerTrim + ", segundoTrim= " + segundoTrim + ", tercerTrim= " + tercerTrim + ", notasEj= " + notasEj;
     }
    
     
