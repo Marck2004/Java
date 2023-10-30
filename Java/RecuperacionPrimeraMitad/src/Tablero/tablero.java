@@ -87,19 +87,15 @@ public class tablero {
                 }
             }
         }
-        System.out.print("Ganador: ");
         return caracter;
     }
 
     public boolean estaLleno() {
-        boolean lleno = false;
+        boolean lleno = true;
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
                 if (tablero[i][j] == '*') {
                     lleno = false;
-
-                } else {
-                    lleno = true;
                 }
             }
 

@@ -22,7 +22,6 @@ public class principal {
         t1.realizarMovimiento(2, 1, 'X');
         t1.realizarMovimiento(2, 2, 'X');
         t1.realizarMovimiento(1, 0, 'O');
-        t1.realizarMovimiento(1, 2, 'X');
 
         System.out.println(t1.verificarGanador());
         t1.estaLleno();
